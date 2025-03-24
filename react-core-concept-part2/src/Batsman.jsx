@@ -22,13 +22,16 @@ export default function Batsman(){
            setRuns(updateRuns);
           }
 
-
+    const cardStyle= {
+        border :"2px solid white",
+        margin : " 20px"
+    }
 
     return(
-        <div>
+        <div style={cardStyle}>
             <h3>Player : Bangla Batsman</h3>
             <h2><small> Sixs : {sixs}</small></h2>
-            
+
             {
                 Runs >= 50 && <p>Your score 50 .</p> 
             }
